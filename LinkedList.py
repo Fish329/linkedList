@@ -82,10 +82,11 @@ class Node:
             return #then don't bother with the rest of the method.
         toPrint=[] #empty list to be filled with nodes
         while (current_node.next):
-            toPrint.append([current_node.data,current_node.next]) #add current node to toPrint
+            toPrint.append([current_node.data]) #add current node to toPrint
             current_node=current_node.next #advance
-        toPrint.append([current_node.data,None]) #print the tail.
-        print (toPrint) #print finished list. it is printed as an array of 2-entry arrays. the first entry of a 2-entry array is the data the node houses, and the second is the adress of the next node.
+        for i in range(len(toPrint)-1): #prnt the finished list.
+            print(toPrint[i],end=" --- ") #print each entry followed by a "link".
+        print("Null") #Print the tail.
 
 #Now that we have all that done, we can actually make the list.
 

@@ -90,9 +90,15 @@ class Node:
 #Now that we have all that done, we can actually make the list.
 
 myNode=Node("Hello World!")
-myNode.insertAtBegin("Apple") #add node that says Apple
-myNode.insertAtEnd("Banana") #add node that says Banana
-myNode.insertAtEnd("Strawberry") #add node that says Strawberry
-myNode.insertAtIndex("Lemon",1) #add node that says Lemon after Apple
-myNode.insertAtEnd("Orange") #Add node that says Orange
+myNode.insertAtBegin("Shahood")
+myNode.insertAtEnd("Mason")
+myNode.insertAtEnd("Nathan")
+myNode.insertAtEnd("Gavin")
+myNode.insertAtEnd("Muntag")
+myNode.insertAtEnd("Leo")
+myNode.insertAtEnd("Chris")
+myNode.insertAtEnd("Marcos")
+myNode.insertAtEnd("Aidan")
+myNode.insertAtEnd("Ryan")
+myNode.insertAtIndex("Jaiden",7)
 myNode.printLL()

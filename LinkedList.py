@@ -85,7 +85,7 @@ class Node:
             toPrint.append([current_node.data]) #add current node to toPrint
             current_node=current_node.next #advance
         for i in range(len(toPrint)-1): #prnt the finished list.
-            print(toPrint[i],end=" --- ") #print each entry followed by a "link".
+            print(str(toPrint[i]),end=" --- ") #print each entry followed by a "link".
         print("Null") #Print the tail.
 
 #Now that we have all that done, we can actually make the list.

@@ -82,10 +82,10 @@ class Node:
             return #then don't bother with the rest of the method.
         toPrint=[] #empty list to be filled with nodes
         while (current_node.next):
-            toPrint.append([current_node.data]) #add current node to toPrint
+            toPrint.append(current_node) #add current node to toPrint
             current_node=current_node.next #advance
         for i in range(len(toPrint)-1): #prnt the finished list.
-            print(str(toPrint[i]),end=" --- ") #print each entry followed by a "link".
+            print(str(toPrint[i].data),end=" --- ") #print each entry followed by a "link".
         print("Null") #Print the tail.
 
 #Now that we have all that done, we can actually make the list.
